@@ -1,0 +1,171 @@
+.task {
+    background-color: rgba(24, 24, 24, 1);
+    border-color: rgba(232, 234, 237, .08);
+    border-radius: calc(.5rem + 8px);
+    border-style: solid;
+    box-shadow: 0 5px 15px #00000059;
+    opacity: 93%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.task-date {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.task div:last-child {
+    display: flex;
+}
+
+.task-check {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-check input {
+    cursor: pointer;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 2.5rem;
+    border-radius: 50% !important;
+    margin: 0px !important;
+    box-shadow: 0 3px 3px #00000059 !important;
+    background-color: #dc3546;
+}
+
+.task-check input:hover {
+    transform: scale(1.2);
+}
+
+.task-check input:checked {
+    background-color: #198754;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.task-info div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-info div span:first-child {
+    line-height: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-word;
+    overflow: hidden;
+    font-size: 2.53rem;
+    margin: 0px;
+}
+
+.task-info p {
+    margin-top: 0.5rem;
+    text-align: justify;
+    word-break: break-word;
+    overflow: hidden;
+    margin-bottom: 0rem;
+    font-size: 1.3rem;
+}
+
+.task-buttons {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.task-buttons button {
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 8px;
+    border-radius: 50%;
+    color: rgb(240, 240, 240);
+    transition: 0.2s;
+
+}
+
+.task-buttons button:first-child:hover {
+    color: #0d6efd !important;
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+.task-buttons button:last-child:hover {
+    color: #dc3545 !important;
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+
+@keyframes expand {
+    0% {
+        /* Estilos de inicio */
+        transform: scale(1);
+    }
+
+    50% {
+        /* Estilos intermedios */
+        transform: scale(1.01);
+    }
+
+    100% {
+        /* Estilos finales */
+        transform: scale(1);
+    }
+}
+
+.today-animation {
+    animation-name: expand;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+
+@media (max-width: 768px) {
+    .task div:last-child {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .task-info {
+        align-items: center;
+        order: 1;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .task-check {
+        align-items: center;
+        order: 2;
+        width: 35%;
+    }
+
+    .task-buttons {
+        align-items: center;
+        order: 3;
+        width: 60%;
+    }
+
+    .task-buttons button{
+        font-size: 2.5rem !important;
+    }
+}

@@ -1,0 +1,38 @@
+.add-button {
+    position: absolute;
+    bottom: 24px;
+    right: 17vw;;
+    height: 100px;
+    width: 100px;
+
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 4rem;
+    
+    color: rgb(240, 240, 240);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px #00000059;
+    background-color: rgba(24, 24, 24, 1);
+    opacity: 93%;
+    transition: 0.2s;
+}
+
+.add-button:hover {
+    background-color: rgb(19, 19, 19);
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    .add-button {
+        bottom: 24px;
+        right: 24px;;
+    }
+}
+@media (max-width: 576px) {
+    .add-button {
+        bottom: 24px;
+        right: 24px;;
+    }
+}

@@ -1,0 +1,16 @@
+.header {
+    background-color: rgba(24, 24, 24, 1);
+    opacity: 99%;
+    top: 0px;
+    height: 200px;
+    border-radius: 0px 0px 70px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
